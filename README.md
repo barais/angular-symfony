@@ -43,6 +43,7 @@ Create and activate user :
 	php app/console fos:user:activate
 
 Run the embedded web server
+
 	php app/console server:run
 
 
