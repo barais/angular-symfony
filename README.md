@@ -1,6 +1,8 @@
 angular-symfony
 ===============
 
+Frk from git clone git@github.com:FlyersWeb/angular-symfony.git angular-symfony
+
 Project Bootstrap for an angularJS + Symfony webservices project.
 
 Introduction
@@ -29,7 +31,7 @@ Create cache and logs folders :
 
 Edit database credentials :
 
-	vim app/config/parameters.yml
+	nano -w app/config/parameters.yml
 
 Update schemas (FOSUserBundle) :
 
@@ -40,10 +42,9 @@ Create and activate user :
 	php app/console fos:user:create
 	php app/console fos:user:activate
 
-Link project to your webserver and access it :
+Run the embedded web server
+	php app/console server:run
 
-	ln -snf ./ /var/www/html/angular-symfony
-	firefox http://localhost/angular-symfony/ &
 
 Authentication system
 ---------------------
